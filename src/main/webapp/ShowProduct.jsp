@@ -47,7 +47,7 @@
                 <td>${product.color}</td>
                 <td>${product.name_cate}</td>
                 <td><a href="/sanpham?action=edit&index=${loop.index}" class="btn btn-warning">Edit</a></td>
-                <td><a onclick="confirm('Bạn có muốn xóa???')" href="/sanpham?action=delete&index=${loop.index}" class="btn btn-danger">Delete</a></td>
+                <td><a href="/sanpham?action=delete&index=${loop.index}" class="btn btn-danger" onclick=" return confirm('Bạn có muốn xóa???')">Delete</a></td>
             </tr>
         </c:forEach>
 
